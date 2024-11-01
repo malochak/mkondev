@@ -1,0 +1,42 @@
+baseURL: mkon.dev
+languageCode: en-us
+title: mkondev blog
+theme: papermod
+
+menu:
+  main:
+    - identifier: search
+      name: 🔍
+      url: /search/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 40
+
+params:
+    homeInfoParams:
+        Title: Welcome to my digital nook! 👋
+        Content: I'm a seasoned Java developer with a passion for crafting clean, efficient code. With over 5 years in the commercial sphere, Java and Spring have become my tools of choice. My professional journey is marked by a continuous pursuit of knowledge in Java intricacies, Spring innovations, and software architecture advancements.
+    defaultTheme: auto 
+    socialIcons: 
+        - name: github
+          url: https://github.com/malochak
+        - name: linkedin
+          url: https://www.linkedin.com/in/konrad-małocha-b77bb813b/
+        - name: x
+          url: https://twitter.com/KonradMalocha
+    ShowShareButtons: true
+    ShareButtons: ["x", "linkedin", "facebook", "reddit"]
+    ShowBreadCrumbs: true
+
+outputs:
+    home: [ HTML, RSS, JSON]
